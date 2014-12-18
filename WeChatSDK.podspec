@@ -11,8 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/wechat"
   s.source       = { :git => "https://github.com/KalicyZhou/WeChatSDK.git" }
   s.source_files = 'Library/*.h'
-  s.library   = 'WeChatSDK'
-
+  s.framework  = 'SystemConfiguration'
 s.subspec 'Debug-iphoneos' do |s_debug_iphoneos|
     s_debug_iphoneos.ios.vendored_library = "Library/libWeChatSDK.a"
   end
@@ -28,6 +27,6 @@ s.subspec 'Debug-iphoneos' do |s_debug_iphoneos|
   s.subspec 'Release-iphonesimulator' do |s_release_iphonesim|
   s_release_iphonesim.ios.vendored_library = "Library/Simulator/libWeChatSDKSim.a"
   end
-  s.library   = 'z', 'WeChatSDK'
+  s.library   = 'z', 'WeChatSDK', 'qlite3.0'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WeChatSDK/Library"'}
 end
