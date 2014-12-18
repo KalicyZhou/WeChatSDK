@@ -27,6 +27,6 @@ s.subspec 'Debug-iphoneos' do |s_debug_iphoneos|
   s.subspec 'Release-iphonesimulator' do |s_release_iphonesim|
   s_release_iphonesim.ios.vendored_library = "Library/Simulator/libWeChatSDKSim.a"
   end
-  s.library   = 'z', 'WeChatSDK', 'qlite3.0'
+  s.library   = 'z', 'WeChatSDK', 'sqlite3.0'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WeChatSDK/Library"'}
 end
