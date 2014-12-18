@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/wechat"
   s.source       = { :git => "https://github.com/KalicyZhou/WeChatSDK.git" }
   s.source_files = 'Library/*.h'
-  s.preserve_paths = "Library/*.a"
   s.library   = 'WeChatSDK'
   s.vendored_libraries = 'Library/libWeChatSDK.a'
   s.library   = 'z', 'WeChatSDK'
