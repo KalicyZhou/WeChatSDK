@@ -6,14 +6,13 @@
 #
 Pod::Spec.new do |s|
   s.name         = "WeChatSDK"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A short description of wechat."
   s.homepage     = "http://EXAMPLE/wechat"
   s.source       = { :git => "https://github.com/KalicyZhou/WeChatSDK.git" }
   s.source_files = 'Library/*.h'
   s.library   = 'WeChatSDK'
-  s.vendored_libraries = 'Library/libWeChatSDK.a'
-  
+
 s.subspec 'Debug-iphoneos' do |s_debug_iphoneos|
     s_debug_iphoneos.ios.vendored_library = "Library/*.{a}"
   end
