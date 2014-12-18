@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "WeChatSDK"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A short description of wechat."
   s.homepage     = "http://EXAMPLE/wechat"
   s.source       = { :git => "https://github.com/KalicyZhou/WeChatSDK.git" }
@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
   s.preserve_paths = "Library/*.a"
   s.library   = 'WeChatSDK'
   s.vendored_libraries = 'Library/libWeChatSDK.a'
+  s.library   = 'z', 'WeChatSDK'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WeChatSDK/Library"'}
 end
