@@ -1,4 +1,4 @@
-WeChatSDK_IOS7
+WeChatSDK
 ==============
 
-WeChatSDK for iOS 7
+WeChatSDK for pod
