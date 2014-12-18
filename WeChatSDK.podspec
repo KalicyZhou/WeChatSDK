@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A short description of wechat."
   s.homepage     = "http://EXAMPLE/wechat"
-  s.author       = { "Yuanyu Huang" => "yuanyuh@staff.l99.com" }
-  s.source       = { :git => "https://github.com/LittleLaa/WeChatSDK_IOS7.git" }
+  s.source       = { :git => "https://github.com/KalicyZhou/WeChatSDK.git" }
   s.source_files = 'Library/*.h'
   s.preserve_paths = "Library/*.a"
   s.library   = 'WeChatSDK'
